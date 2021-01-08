@@ -69,15 +69,18 @@ INSERT INTO `product` (`id`, `name`, `price`, `category`, `featured`, `image`) V
 --
 
 
-
+# drop table user;
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
   `name` nvarchar(50) NOT NULL,
-  `address` nvarchar(50) NOT NULL,
+  `address` nvarchar(255) NOT NULL,
   `email` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `password` varchar(50) NOT NULL,
+  'role' varchar(50) NOT NULL
+)
+# ENGINE=InnoDB DEFAULT CHARSET=latin1
+;
 
 insert into `user` values (1,'Hoàng Nhật Dương','Hợp Thung, Long Sơn, Lương Sơn, Hòa Bình','hoangduong181201@gmail.com','Duong114','123456');
 --

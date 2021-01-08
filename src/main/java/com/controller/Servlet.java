@@ -38,7 +38,7 @@ public class Servlet extends HttpServlet {
             session.setAttribute("cartlist", cartlist);
             session.setAttribute("list", list);
 
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            request.getRequestDispatcher("all-products.jsp").forward(request, response);
         }else {
             doPost(request, response);
         }
